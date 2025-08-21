@@ -1,0 +1,101 @@
+/* Background */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cbc55a, #35ebdc);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Glassmorphism card */
+.register-box {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Heading */
+.register-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.4rem;
+}
+
+.register-subtext {
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+/* Inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #1e40af;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 2px solid #c7d2fe;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.form-group input:focus {
+  border-color: #6366f1;
+  background: #f5f7ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.25);
+}
+
+/* Button */
+.register-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #6366f1, #3b82f6, #db138b);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+}
+
+/* Footer */
+.register-footer {
+  margin-top: 1.3rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.register-footer a {
+  color: #5ce7bf;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}

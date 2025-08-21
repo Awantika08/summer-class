@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.homepage {
+  width: 100%;
+  background: #fffafc;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg")
+    center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.shop-btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-btn:hover {
+  background: #e73370;
+  transform: translateY(-2px);
+}
+
+/* Categories */
+.categories {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ff4081;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  padding: 15px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* Users List */
+.user-list {
+  padding: 50px 10%;
+  background: #fdf0f5;
+}
+
+.user-list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #d81b60;
+}
+
+.user-list ul {
+  list-style: none;
+}
+
+.user-list li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #eee;
+}

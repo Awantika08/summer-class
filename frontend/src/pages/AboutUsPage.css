@@ -1,0 +1,93 @@
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/fashion-bg.jpg") center/cover no-repeat; /* ✅ add your fashion photo in assets */
+  position: relative;
+}
+
+.about-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 192, 203, 0.35); /* soft pink overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+}
+
+.about-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 800px;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-text .tagline {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e75480; /* hot pink accent */
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e75480; /* pink underline */
+  margin: 10px auto 0;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.about-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-primary {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: #e75480; /* girly pink button */
+  color: white;
+  cursor: pointer;
+}
+
+.btn-outline {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #e75480;
+  border-radius: 30px;
+  background: transparent;
+  color: #e75480;
+  cursor: pointer;
+}

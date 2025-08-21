@@ -1,0 +1,112 @@
+/* Background */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card */
+.login-box {
+  background: white;
+  padding: 2.2rem;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 380px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Heading */
+.login-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtext {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #374151;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #ff6a00;
+  background: #fff9f5;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255,106,0,0.3);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 0.95rem;
+  background: linear-gradient(135deg, #ff6a00, #ee0979, #8e2de2);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(238,9,121,0.35);
+}
+
+/* Footer */
+.login-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.login-footer a {
+  color: #ee0979;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
